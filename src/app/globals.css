@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #000000;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #000000;
+
+  --color-primary: #000000;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f5f5f5;
+  --color-secondary-foreground: #000000;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #666666;
+
+  --color-accent: #c4d92e;
+  --color-accent-foreground: #000000;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #eeeeee;
+  --color-input: #eeeeee;
+  --color-ring: #000000;
+
+  --color-chart-1: #6366f1;
+  --color-chart-2: #c7d2fe;
+  --color-chart-3: #1e3a5f;
+  --color-chart-4: #f1c40f;
+  --color-chart-5: #e74c3c;
+
+  --color-sidebar: #f7f7f7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f0f0f0;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #d4d4d8;
+  --color-sidebar-ring: #3b82f6;
+
+  --radius-lg: 1.5rem; /* 24px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-sm: 0.5rem; /* 8px */
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  --color-light-gray: #f5f5f5;
+  --color-medium-gray: #666666;
+  --color-blue-accent: #6366f1;
+  --color-soft-purple: #c7d2fe;
+
+  --font-primary: "Inter", sans-serif;
+  --font-hero: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-subheading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-small: "Inter", sans-serif;
+  --font-button: "Inter", sans-serif;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e5e5e5;
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --card: #ffffff;
+    --card-foreground: #000000;
+    --popover: #ffffff;
+    --popover-foreground: #000000;
+    --primary: #000000;
+    --primary-foreground: #ffffff;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #000000;
+    --muted: #f5f5f5;
+    --muted-foreground: #666666;
+    --accent: #c4d92e;
+    --accent-foreground: #000000;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #eeeeee;
+    --input: #eeeeee;
+    --ring: #000000;
+    --chart-1: #6366f1;
+    --chart-2: #c7d2fe;
+    --chart-3: #1e3a5f;
+    --chart-4: #f1c40f;
+    --chart-5: #e74c3c;
+    --radius: 1.5rem;
+    --sidebar-background: #f7f7f7;
+    --sidebar-foreground: #404040;
+    --sidebar-primary: #1a1a1a;
+    --sidebar-primary-foreground: #fafafa;
+    --sidebar-accent: #f0f0f0;
+    --sidebar-accent-foreground: #1a1a1a;
+    --sidebar-border: #d4d4d8;
+    --sidebar-ring: #3b82f6;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-family: var(--font-hero);
+    font-size: 4.5rem; /* 72px */
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem; /* 48px */
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-family: var(--font-subheading);
+    font-size: 1.75rem; /* 28px */
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: 1.125rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  small {
+    font-family: var(--font-small);
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+  }
+
+  .btn {
+    font-family: var(--font-button);
+    font-size: 1rem; /* 16px */
+    font-weight: 600;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
