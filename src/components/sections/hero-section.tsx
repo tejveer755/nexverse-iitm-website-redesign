@@ -63,7 +63,7 @@ const collageImages: CollageImage[] = [
 
 const HeroSection = () => {
   return (
-    <section className="bg-stone-950 pb-16 lg:rounded-b-[40px] lg:pt-32 lg:pb-24">
+    <section className="bg-stone-950 pb-16 lg:rounded-b-[40px] lg:pb-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16">
           <div className="text-center lg:text-left">
