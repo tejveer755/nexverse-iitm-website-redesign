@@ -10,11 +10,13 @@ import EventsSection from "@/components/sections/events-section";
 import TestimonialQuote from "@/components/sections/testimonial-quote";
 import CtaSection from "@/components/sections/cta-section";
 import Footer from "@/components/sections/footer";
+import Navbar from "@/components/sections/Navbar";
 
 export default function HomePage() {
   return (
-    <main className="relative overflow-hidden">
-      <AnnouncementBar />
+    <main className="">
+      {/* <AnnouncementBar /> */}
+      <Navbar/>
       <HeroSection />
       <IntroSection />
       <div className="space-y-20 lg:space-y-32">

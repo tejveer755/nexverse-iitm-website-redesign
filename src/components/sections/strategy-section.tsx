@@ -18,7 +18,7 @@ const StrategySection = () => {
             <div className="absolute bottom-8 left-8 flex items-center gap-3 rounded-full bg-white p-2 pr-5 shadow-lg">
               <div className="relative h-10 w-10">
                 <Image
-                  src="https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/651cea59d335c0292415c1e3_home-strategy_1_5_person.avif"
+                  src="https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/651ce84c3aa58280f1440590_home-strategy_1_5x.avif"
                   alt="Expert Mentor portrait"
                   width={40}
                   height={40}

@@ -28,7 +28,7 @@ const MatchSection = () => {
           <div className="flex justify-center lg:justify-start">
             <div className="w-full max-w-sm lg:max-w-none">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/8a09d4f9-a021-47ef-83dc-143f91d637da-hashtagpaid-clone-vercel-app/assets/icons/next-553513-651ce82c48b2738217a7f508_home-match_1_5x.avif?"
+                src="https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/651ce84c3aa58280f1440590_home-strategy_1_5x.avif"
                 alt="A lively DJ event sponsored by Heineken, showcasing a successful brand-creator collaboration"
                 width={1024}
                 height={1280}
