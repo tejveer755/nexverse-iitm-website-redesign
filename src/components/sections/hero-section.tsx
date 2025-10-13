@@ -3,7 +3,6 @@
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
 import { motion, useReducedMotion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import Aurora from "../Aurora"
 
 // Local parallax helper: uses rAF for smooth updates and respects reduced motion
