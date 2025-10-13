@@ -4,12 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { MagneticButton } from "../magnetic-button";
 import Link from "next/link";
 
-interface AnimatedTextProps {
-  text: string;
-  className?: string;
-}
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
+const AnimatedText = ({ text, className }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -41,7 +37,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
               [0.3, 1]
             );
 
-            const blur = useTransform(
+            const blur= useTransform(
               scrollYProgress,
               [wordAppearProgressStart, wordAppearProgressEnd],
               [8, 0]
@@ -89,7 +85,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
   );
 };
 
-const IntroSection: React.FC = () => {
+const IntroSection = () => {
   return (
     <section className="py-20 lg:py-28">
       <AnimatedText
