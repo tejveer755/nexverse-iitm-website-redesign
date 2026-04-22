@@ -67,7 +67,7 @@ const RepurposeSection = () => {
                 sm:-right-6
                 md:-right-10
                 lg:-right-16
-                xl:-right-20
+                xl:-right-16
                 transition-all
               "
             >

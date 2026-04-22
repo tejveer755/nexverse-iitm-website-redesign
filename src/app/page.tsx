@@ -1,7 +1,7 @@
 import AnnouncementBar from "@/components/sections/announcement-bar";
 import HeroSection from "@/components/sections/hero-section";
 import IntroSection from "@/components/sections/intro-section";
-import MatchSection from "@/components/sections/match-section";
+import MatchSection from "@/components/sections/society-highlights";
 import StrategySection from "@/components/sections/strategy-section";
 import MeasureSection from "@/components/sections/measure-section";
 import RepurposeSection from "@/components/sections/repurpose-section";
@@ -12,18 +12,19 @@ import CtaSection from "@/components/sections/cta-section";
 import Footer from "@/components/sections/footer";
 import Navbar from "@/components/sections/Navbar";
 import Collage from "@/components/Collage";
+import SocietyHighlights from "@/components/sections/society-highlights";
 export default function HomePage() {
   return (
     <main className="">
       <HeroSection />
       <IntroSection />
-        <MatchSection />
-        <RepurposeSection />
+        <SocietyHighlights/>
+        {/* <RepurposeSection /> */}
         <Collage/>
         {/* <MeasureSection /> */}
         <TestimonialsSection />
         <EventsSection />
-        <TestimonialQuote />
+        {/* <TestimonialQuote /> */}
     </main>
   );
 }
