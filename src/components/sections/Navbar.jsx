@@ -76,7 +76,7 @@ function Navbar() {
   const menuItems = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/aboutUs' },
-    { name: 'Events', href: '/' },
+    { name: 'Events', href: '/events' },
     { name: 'Connect Us', href: '/' }
   ]
 
